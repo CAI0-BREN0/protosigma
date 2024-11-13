@@ -62,7 +62,7 @@ nav .social a i:hover{
 body{
     width: 100%;
     height: 100vh;
-    background: url('/images/pexels-apasaric-4512439.jpg');
+    background: url('images/pexels-apasaric-4512439.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
