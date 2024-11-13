@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="operações.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Operações - Rede Sigma</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo1.png" class="logo" alt="" >
+            <div class="menu">
+                <a href="home.html">Inicio</a>
+                <a href="veiculos.html">Veículos</a>
+                <a href="clientes.html">Operações</a>
+            </div>
+            <div class="social">
+                <a href="https://github.com/JotaMarcos/PropostaProjetoSigma/tree/main"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </nav>
+    </header>
+
+     <section id="operacoes" >
+        <div class="card">
+            <h2>Cadastrar Operação</h2>
+
+    
+            <form id="form-operacao">
+                <p>Tipo de Operação:</p>
+                <select id="tipo-operacao">
+                    <option value="compra">Compra</option>
+                    <option value="venda">Venda</option>
+                </select><br/>
+
+                Número: <input type="number" id="numero" required /><br/>
+                Data: <input type="date" id="data" required /><br/>
+                Cliente: 
+                <select id="cliente-select"></select><br/>
+                Vendedor: 
+                <input type="text" id="vendedor" required /><br/>
+                Veículo: 
+                <select id="veiculo-select"></select><br/>
+
+
+                Valor de Entrada: 
+                <input type="number" id="valor-entrada" /><br/>
+                Valor Financiado: 
+                <input type="number" id="valor-financiado" /><br/>
+                Valor Total: 
+                <input type="number" id="valor-total" /><br/>
+
+             <button class="btn" type="submit">Registrar Operação</button>
+            </form>
+        </div>
+         <h3>Lista de Operações Registradas:</h3>
+         <ul id="lista-operacoes"></ul>
+
+     </section>
+
+
+     <script src="script.js"></script> 
+  </body> 
+  </html> 

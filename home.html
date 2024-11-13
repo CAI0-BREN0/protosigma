@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo1.png" class="logo" alt="" >
+            <div class="menu">
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="veiculos.html">Veículos</a></li>
+                <li><a href="operacoes.html">Operações</a></li>
+
+            </div>
+
+            <div class="social">
+                <a href="https://github.com/JotaMarcos/PropostaProjetoSigma/tree/main"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="hero">
+
+        <div class="text">
+            <h4>Qualidade e Confiança</h4>
+            <h1>Sigma<br> <span>Cars</span></h1>
+            <p>Força, Poder, e velocidade </p>
+  
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Rede Sigma de Automóveis</p>
+    </footer>
+
+    <script>
+        let heroBg = document.querySelector('.hero');
+
+        setInterval(() => {
+            heroBg.style.backgroundImage = "url(images/bg-light.jpg)"
+            
+            setTimeout(() => {
+                heroBg.style.backgroundImage = "url(images/bg.jpg)"
+            }, 1000);
+        }, 2200);
+    </script>
+</body>
+</html>
